@@ -8,7 +8,8 @@ mex CalculateMassAC.cpp xcom.cpp
 
 2  Call method:
 	R = CalculateMassAC( formula, E)
-	formula is a 1 by N char matrix chemical formula of material or a 2 by N double matrix 
+	--formula is a 1 by N char matrix chemical formula of material or a 2 by N double matrix 
+	--E is a 1 by N double matrix
 caution：./data file directory must in matlab working directory
 
 1.1 输入参数 formula 
