@@ -1,7 +1,7 @@
 1 Setup
 this program depends on the platform.
 you need to complier source files on your own matlab platform 
-enter the file directory of CaculateMassAC.cpp and run 
+enter the source files directory of CaculateMassAC.cpp and run 
 
 mex -setup c++
 mex CalculateMassAC.cpp xcom.cpp
