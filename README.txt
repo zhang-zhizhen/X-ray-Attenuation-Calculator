@@ -1,16 +1,15 @@
 1 Setup
 this program depends on the platform.
-you need to complier on yuor own matlab platform 
+you need to complier source files on your own matlab platform 
 enter the file directory of CaculateMassAC.cpp and run 
 
 mex -setup c++
 mex CalculateMassAC.cpp xcom.cpp
 
-caution：./data file directory must in matlab working directory
-
 2  Call method:
 	R = CalculateMassAC( formula, E)
-	formula is the chemical formula of material or a 2 by N double 
+	formula is a 1 by N char matrix chemical formula of material or a 2 by N double matrix 
+caution：./data file directory must in matlab working directory
 
 1.1 输入参数 formula 
 formula是必选参数
