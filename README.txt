@@ -10,7 +10,7 @@ mex CalculateMassAC.cpp xcom.cpp
 	R = CalculateMassAC( formula, E)
 	--formula is a 1 by N char matrix chemical formula of material or a 2 by N double matrix 
 	--E is a 1 by N double matrix that lists energy of Photons ,and unit is keV ,range in [1 keV, 1E6 keV]
-	--R is a struct and the unit of number in R is cm^2/g
+	--R is a struct that has nine field name and the unit of cross section in R is cm^2/g
 caution：./data file directory must in matlab working directory
 
 1.1 输入参数 formula 
