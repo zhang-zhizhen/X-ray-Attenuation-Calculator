@@ -1,9 +1,16 @@
+1 Setup
+this program depends on the platform.
+you need to complier on yuor own matlab platform 
+enter the file directory of CaculateMassAC.cpp and run 
 
-注意：./data 文件夹 必须在matlab 当前目录中
+mex -setup c++
+mex CalculateMassAC.cpp xcom.cpp
 
-1  调用方法:
-	R = CalculateMassAC( formula,  E )
-	formula 是指定元素组成的char字符矩阵表示的化学式 或者 2行N列数值矩阵
+caution：./data file directory must in matlab working directory
+
+2  Call method:
+	R = CalculateMassAC( formula, E)
+	formula is the chemical formula of material or a 2 by N double 
 
 1.1 输入参数 formula 
 formula是必选参数
@@ -51,9 +58,3 @@ R1 = CalculateMassAC('Pb2O3(H2O).7(CuO)6.5' , 10:0.01:200)
 10:0.01:200 表示10keV到200keV，间隔为0.01keV
 能量最低为1keV，最高到GeV, 在X射线领域已经足够了
 
-2 Setup
-如果修改了源文件，需要重新编译
-需要将CalculateMassAC.cpp所在目录设置为MATLAB当前目录，并在MATLAB命令行输入
-
-mex -setup c++
-mex CalculateMassAC.cpp xcom.cpp
