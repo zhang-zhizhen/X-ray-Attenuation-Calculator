@@ -1,4 +1,4 @@
-%A: Pb2O4H2 TotalWithCoherent from NIST
+%A: Aluminium TotalWithCoherent from NIST
 %the unit of the first column of A is MeV
 A=[
 1.000E-03 2.256E+00 1.427E-02 1.183E+03 0.000E+00 0.000E+00 1.185E+03 1.183E+03 
@@ -23,9 +23,17 @@ A=[
 1.500E-01 6.122E-03 1.267E-01 4.993E-03 0.000E+00 0.000E+00 1.378E-01 1.317E-01 
 2.000E-01 3.504E-03 1.168E-01 2.002E-03 0.000E+00 0.000E+00 1.223E-01 1.188E-01   ];
 
+%Set Up
+mex -setup c++
+mex CalculateMassAC.cpp xcom.cpp
+
+%Calculate Aluminium cross section by CalculateMassAC mexfunction
 B = CalculateMassAC('Al',1:0.01:200);
+
+%plot TotalWithCoherent cross section calculated by CalculateMassAC and NIST
 plot(log(A(:,1)),log(A(:,7)),'k-')
 hold on
+%B.PhotonEnergy unit is MeV , need be transformed to keV
 plot(log(B.PhotonEnergy*1e-3),log(B.TotalWithCoherent),'r--')
 
 
