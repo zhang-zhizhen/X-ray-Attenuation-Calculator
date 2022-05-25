@@ -13,6 +13,8 @@ mex CalculateMassAC.cpp xcom.cpp
 	--R is a struct that has nine field name and the unit of cross section in R is cm^2/g
 caution：./data file directory must in matlab working directory
 
+3. decompression the data.zip in the matlab working directory such that MDATX3.00x NIST data file in the "YourWorking irectory/data"
+
 chinese: 
 1.1 输入参数 formula 
 formula是必选参数
