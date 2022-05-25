@@ -14,7 +14,7 @@ mex CalculateMassAC.cpp xcom.cpp
 caution：./data file directory must in matlab working directory
 
 3. decompression the data.zip in the matlab working directory such that MDATX3.00x NIST data file in the "YourWorking irectory/data"
-
+4. this mexfunction is based on https://github.com/gsize/calMu opensource code.
 chinese: 
 1.1 输入参数 formula 
 formula是必选参数
